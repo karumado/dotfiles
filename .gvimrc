@@ -5,7 +5,7 @@ set list
 set listchars=tab:>-,trail:~,eol:$
 
 "新しい行のインデントを現在行と同じにする
-set autoindent 
+"set autoindent 
 
 "タブ表示
 set showtabline=2
@@ -53,7 +53,7 @@ set number
 set showmatch
  
 "新しい行を作った時に高度な自動インデントを行う
-set smarttab
+"set smarttab
  
 " 検索結果のハイライトをEsc連打でクリアする
 nnoremap <ESC><ESC> :nohlsearch<CR>

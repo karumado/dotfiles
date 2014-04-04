@@ -1,22 +1,51 @@
+" ファイルエンコーディング
+set fileencoding=utf-8
+set fileformat=unix
+
 " シンタックス 有効
 set syntax=on
 " 行番号表示
-set number
-" Tabは半角スペース
+set nu
+"" タブ幅は半角スペース２個分
+"set cindent
 set expandtab
-" タブ幅は半角スペース２個分
 set tabstop=2
-" インデント
-set cindent
+set softtabstop=2
 set shiftwidth=2
+
+" ウィンドウタイトルを編集中のファイル名にする
+set title
+
+" 検索時に大文字を含んでいたら大/小を区別
+set smartcase
+
+" インクリメンタルサーチ
+set incsearch
+
 " 検索結果ハイライト
 set hlsearch
 
 "set softtabstop=2
 
+"内容が変更されたら自動的に再読み込み
+set autoread
+
+"Unicodeで行末が変になる問題を解決
+set ambiwidth=double
+
 set imdisable
 
+"vi互換をオフする
 set nocompatible
+
+" カーソル行をわかりやすく
+set cursorline
+
+" カーソル位置縦列
+set cursorcolumn
+
+" 不可視ファイルの表示
+"set list
 
 colorscheme desert
 
