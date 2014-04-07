@@ -18,6 +18,8 @@ export EDITOR=/usr/local/bin/vim
 export PAGER=/usr/local/bin/vimpager
 export MANPAGER=/usr/local/bin/vimpager
 
+# brew cask 用
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # -------------------------------------
 # zshのオプション
