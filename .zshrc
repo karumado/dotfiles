@@ -1,8 +1,3 @@
-alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias vim='env_LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-
-alias ls='ls -al'
-
 # -------------------------------------
 # 環境変数
 # -------------------------------------
@@ -26,8 +21,10 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # -------------------------------------
 
 ## 補完機能の強化
-autoload -U compinit
-compinit
+# autoload -U compinit
+# compinit
+
+autoload -U compinit && compinit
 
 ## 入力しているコマンド名が間違っている場合にもしかして：を出す。
 setopt correct
@@ -120,6 +117,10 @@ RPROMPT="[%*]"
 # エイリアス
 # -------------------------------------
 
+alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vim='env_LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+
+
 # -n 行数表示, -I バイナリファイル無視, svn関係のファイルを無視
 alias grep="grep --color -n -I --exclude='*.svn-*' --exclude='entries' --exclude='*/cache/*'"
 
@@ -132,6 +133,11 @@ alias l1="ls -1"
 # tree
 alias tree="tree -NC" # N: 文字化け対策, C:色をつける
 
+# rm
+alias rm='rmtrash'
+
+# mv
+alias mv='rm -i'
 
 # -------------------------------------
 # キーバインド
