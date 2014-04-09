@@ -4,36 +4,39 @@
 #====================================
 
 # Homebrewを最新版にアップデート
-update
+update || true
 
 # Formulaを更新
-upgrade
+# upgrade || true
 
 # Add Repository
-tap homebrew/binary
-tap phinze/homebrew-cask
+tap homebrew/binary || true
+tap phinze/homebrew-cask || true
 
 # Packages for development
 # install crul
-install fontforge
-install git
-install vim
+install fontforge || true
+install git || true
+install hg || true
+install zsh || true
+install python3 || true
+install vim || true
 # install imagemagick
-install wget
-install heroku-toolbelt
-install rmtrash
+install wget || true
+install heroku-toolbelt || true
+install rmtrash || true
 # install pdftk
 # install php55 --with-pgsql --with-pdo-pgsql
 # install php55-mcrypt php55-xdebug php55-opcache composer
-install tmux
-install tree
+install tmux || true
+install tree || true
 # zshは/etcを参照しないようにする(参考：brew info zsh)
 install zsh --disable-etcdir
 
 # macvimを入れる
 tap supermomonga/homebrew-splhack
-install cscope
-install lua
+install cscope || true
+install lua || true
 install --HEAD cmigemo-mk
 install --HEAD ctags-objc-ja
 install gettext-mk
@@ -45,38 +48,42 @@ tap sanemat/font
 install --powerline --vim-powerline ricty
 
 # brew-cask
-install brew-cask
+install brew-cask || true
 
 #cask install android-studio
-cask install adobe-reader
-cask install alfred
-cask alfred link
-cask install appcleaner
-cask install arduino
-cask install airdisplay
-cask install bettertouchtool
-cask install caffeine
-cask install cyberduck
-cask install coteditor
-cask install dropbox
-cask install dash
-cask install evernote
-cask install github
-cask install google-chrome
-cask install google-drive
-cask install google-hangouts
-cask install google-japanese-ime
-cask install KeyRemap4MacBook
-cask install iterm2
-cask install kobito
-cask install macvim
-cask install pycharm-ce
-cask install shiftit
-cask install skitch
-cask install skype
-cask install virtualbox
-cask install vagrant
-cask install wunderlist
-cask install xtrafinder
+cask install appcleaner || true
+cask install adobe-reader || true
+cask install alfred || true
+cask alfred link || true
+cask install appcleaner || true
+cask install arduino || true
+cask install airdisplay || true
+cask install bettertouchtool || true
+cask install blender || true
+cask install caffeine || true
+cask install cyberduck || true
+cask install coteditor || true
+cask install dropbox || true
+cask install dash || true
+cask install evernote || true
+cask install github || true
+cask install google-chrome || true
+cask install google-drive || true
+cask install google-hangouts || true
+cask install google-japanese-ime || true
+cask install KeyRemap4MacBook || true
+cask install iterm2 || true
+cask install kobito || true
+cask install macvim || true
+cask install pycharm-ce || true
+cask install shiftit || true
+cask install skitch || true
+cask install skype || true
+cask install steam || true
+cask install unity3d || true
+cask install virtualbox || true
+cask install vagrant || true
+cask install wunderlist || true
+cask install xtrafinder || true
 # 不要なファイルを削除
 cleanup
