@@ -3,15 +3,19 @@ set fileencoding=utf-8
 set fileformat=unix
 
 " シンタックス 有効
-set syntax=on
+"set syntax=on
+syntax enable
+colorscheme hybrid
+"colorscheme xoria256
+
+
 " 行番号表示
 set nu
 "" タブ幅は半角スペース２個分
-"set cindent
+set backspace=2
+set autoindent
+set cindent
 set expandtab
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
 
 " ウィンドウタイトルを編集中のファイル名にする
 set title
@@ -36,7 +40,8 @@ set ambiwidth=double
 set imdisable
 
 "vi互換をオフする
-set nocompatible
+"そもそも.vimrcがあれば不要勝手にoffになる
+"set nocompatible
 
 " カーソル行をわかりやすく
 set cursorline
@@ -46,8 +51,6 @@ set cursorcolumn
 
 " 不可視ファイルの表示
 "set list
-
-colorscheme desert
 
 
 " 行頭のスペースの連続をハイライトさせる
@@ -77,7 +80,7 @@ endif
 set list
 set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<
 
-
+"filetype plugin indent on
 filetype plugin indent off
 
 if has('vim_starting')
