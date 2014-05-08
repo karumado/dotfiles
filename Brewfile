@@ -37,15 +37,15 @@ install zsh --disable-etcdir
 tap supermomonga/homebrew-splhack
 install cscope || true
 install lua || true
-install --HEAD cmigemo-mk
-install --HEAD ctags-objc-ja
-install gettext-mk
-install --HEAD macvim-kaoriya
+install --HEAD cmigemo-mk || true
+install --HEAD ctags-objc-ja || true
+install gettext-mk || true
+install --HEAD macvim-kaoriya || true
 linkapps
 
 # powerline用フォントを作成する
 tap sanemat/font
-install --powerline --vim-powerline ricty
+install --powerline --vim-powerline ricty || true
 
 # brew-cask
 install brew-cask || true
