@@ -6,5 +6,6 @@ alias rm='rmtrash'
 alias mv='mv -i'
 
 export LSCOLORS=gxfxcxdxbxegedabagacad
+export PATH="$HOME/.gem/ruby/2.0.0/bin:$PATH"
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"

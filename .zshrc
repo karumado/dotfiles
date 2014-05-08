@@ -23,7 +23,6 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 ## 補完機能の強化
 # autoload -U compinit
 # compinit
-
 autoload -U compinit && compinit
 
 ## 入力しているコマンド名が間違っている場合にもしかして：を出す。
@@ -134,7 +133,7 @@ alias l1="ls -1"
 alias tree="tree -NC" # N: 文字化け対策, C:色をつける
 
 # rm
-alias rm='rmtrash'
+# alias rm='rmtrash'
 
 # mv
 alias mv='rm -i'
