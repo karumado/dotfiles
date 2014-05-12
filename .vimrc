@@ -1,6 +1,6 @@
 " ファイルエンコーディング
-set fileencoding=utf-8
-set fileformat=unix
+"set fileencoding=utf-8
+"set fileformat=unix
 
 " シンタックス 有効
 "set syntax=on
@@ -29,7 +29,8 @@ set incsearch
 " 検索結果ハイライト
 set hlsearch
 
-"set softtabstop=2
+" バックアップを作らない
+set nobackup
 
 "内容が変更されたら自動的に再読み込み
 set autoread
@@ -80,8 +81,6 @@ endif
 set list
 set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<
 
-"filetype plugin indent on
-filetype plugin indent off
 
 if has('vim_starting')
   set runtimepath+=~/dotfiles/.vim/bundle/neobundle.vim/
@@ -89,8 +88,11 @@ if has('vim_starting')
 endif
 
 " インストールしたいプラグイン
+" :NeoBundleInstallでインスコ
+" :NeoBundleCleanで削除
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc'
 
 filetype plugin indent on
+
