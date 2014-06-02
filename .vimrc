@@ -83,10 +83,10 @@ set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<
 
 
 if has('vim_starting')
-  set runtimepath+=~/dotfiles/.vim/bundle/neobundle.vim/
-  call neobundle#rc(expand('~/dotfiles/.vim/bundle/'))
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
+call neobundle#begin(expand('~/.vim/bundle/'))
 " インストールしたいプラグイン
 " :NeoBundleInstallでインスコ
 " :NeoBundleCleanで削除
